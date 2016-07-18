@@ -1,0 +1,147 @@
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0px;
+}
+
+#main {
+  margin: 0 auto;
+  width: 100%;
+  min-width: 872px;
+}
+
+#left {
+  width: 74%;
+  float: left;
+}
+
+#status {
+  width: 100%;
+  padding: 8px 6px;
+  color: white;
+  font-weight: bold;
+  height: 40px;
+  text-align: center;
+}
+
+#giving_result {
+  width: 640px;
+}
+
+#chartContainer {
+  height: 350px;
+  margin-top: 20px;
+}
+
+#canvasjs-chart-container {
+  width: 100%;
+}
+
+#right {
+  width: 25%;
+  float: right;
+  border-left: 5px solid #E5E5E5;
+  background-color: #ACC1C5;
+}
+
+#title {
+  text-align: center;
+}
+
+.instruction {
+  padding: 20px;
+  font-weight: bold;
+}
+
+table {
+  margin: 3px;
+  width: 100%;
+  border-spacing: 0px;
+}
+
+table th {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+table th, table td {
+  padding: 3px;
+  border: 1px solid #000;
+}
+
+#print_report {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 0.9em;
+  float: right;
+  margin-right: 20px;
+}
+
+#fileHolder {
+  background-color: #E5E5E5;
+}
+
+ul#fileOutput {
+  padding: 0px;
+  margin: 0px;
+  overflow-y: scroll;
+  background-color: #ACC1C5;
+}
+
+ul#fileOutput li {
+  list-style: none;
+  padding: 10px 5px;
+  color: #494545;
+  margin: 3px 0px;
+  background-color: white;
+  overflow: auto;
+}
+
+input.file_multi {
+  padding: 10px;
+  width: 90%;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.files_list_header {
+  margin: 0px;
+  color: white;
+  background: #363636;
+  padding: 10px;
+  height: 20px;
+}
+
+.files_list_header .header {
+  font-weight: bold;
+}
+
+button.reset_files {
+  padding: 5px 20px;
+  font-weight: bold;
+  font-size: .9em;
+  float: right;
+  margin-top: -3px;
+}
+
+li{
+  background-image: url('/public/images/unknown.png');
+  background-repeat: no-repeat;
+  text-indent: 18px;
+  background-position-y: 10px;
+  background-position-x: 2px;
+}

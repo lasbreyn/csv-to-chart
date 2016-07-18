@@ -1,0 +1,24 @@
+{
+  "name": "CSVChart",
+  "repository": {
+    "type": "bitbucket",
+    "url": "https://github.com/lasbreyn/CSVchart"
+  },
+  "version": "0.0.1",
+  "main": "index.html",
+  "window": {
+  "title": "CSV Digest",
+  "icon": "CSV.png",
+  "toolbar": true,
+  "width": 1000,
+  "height": 800,
+  "position": "center",
+  "min_width": 600,
+  "min_height": 400
+},
+  "webkit": {
+    "plugin": true
+  },
+  "author": "Lasbrey Nwachukwu - lasbreyn@gmail.com",
+  "license": "ISC"
+}

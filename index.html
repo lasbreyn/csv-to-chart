@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSV Chart</title>
+    <link rel="stylesheet" type="text/css" href="public/css/styles.css">
+</head>
+<body>
+    <div id="main">
+        <div id="left">
+            <div id="status" class="clearfix"></div>
+            <div id="giving_result" style="display: none;">
+                <h3 id="title"></h3>
+                <table>
+                    <thead id="headings">
+                    <tr>
+                        <th id="f_name">Name</th>
+                        <th id="age">Month</th>
+                        <th id="l_name">Tithe/Giving</th>
+                    </tr>
+                    </thead>
+                    <tbody id="results_table">
+                    <!-- this will be auto-populated -->
+                    </tbody>
+                </table>
+                <div id="chartContainer"></div>
+            </div>
+        </div>
+        <div id="right">
+            <div id="fileHolder">
+                <input type="file" multiple webkitdirectory id="files" name="files[]" accept=".csv" class="file_multi"/>
+            </div>
+            <div class="files_list_header">
+                <span class="header">CSV files:</span>
+                <button class="reset_files clearfix" value="Reset">Reset</button>
+            </div>
+            <ul id="fileOutput">
+            <!-- this will be auto-populated -->
+                <div class="instruction">Click on Choose Files button above to select a folder that contains your CSV files.</div>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="public/jquery/jquery.min.js"></script>
+<script src="public/jquery/jquery.form.min.js"></script>
+<script src="public/jquery/canvasjs.min.js"></script>
+<script src="public/jquery/jspdf.min.js"></script>
+<script src="public/jquery/html2canvas.js"></script>
+<script src="public/jquery/csvchar.js"></script>
+</html>
